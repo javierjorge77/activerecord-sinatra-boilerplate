@@ -1,0 +1,6 @@
+require "faker"
+20.times do
+  Restaurant.create(
+    name: Faker::Restaurant.name, city: Faker::Address.city
+  )
+end

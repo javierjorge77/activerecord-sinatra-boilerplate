@@ -1,0 +1,13 @@
+<H1> HELLO WORD</H1>
+
+<H2> subtitle </H2>
+
+<% @restaurants.each do |restaurant|%>
+<ul>
+<li>
+<a href="/restaurants/<%= restaurant.id %>">
+<%= restaurant.name %>
+</a>
+</li>
+</ul>
+<% end %>
